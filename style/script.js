@@ -35,6 +35,7 @@ const texts = [
   "Happy Birthday",
   "Mít Mật 💕",
   "Người anh thương",
+  "Anh nho em lam",
 ];
 
 const BASE_DISPLAY_TIME = 2500;
