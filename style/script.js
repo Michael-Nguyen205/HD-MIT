@@ -8,6 +8,11 @@ function playSound() {
     sound.play().catch((e) => {
       console.log('Phát nhạc bị chặn:', e);
     });
+
+       // Kiểm tra nếu là thiết bị di động
+       if (/Mobi|Android/i.test(navigator.userAgent)) {
+        alert("Trình duyệt trên điện thoại đã chặn âm thanh. Hãy chạm vào màn hình để bật nhạc nhé!");
+      }
   }
 }
 
@@ -190,6 +195,8 @@ function drawMatrixRain() {
   hue = (hue + 1) % 360;
 
   ctx.fillStyle = "rgba(0, 0, 0, 0.1)";
+  // ctx.fillStyle = "#00ff00"; // Màu xanh lè
+
   ctx.fillRect(0, 0, W, H);
 
   ctx.font = fontSize + "px monospace";
