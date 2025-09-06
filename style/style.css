@@ -1,0 +1,59 @@
+html, body {
+  margin: 0; padding: 0;
+  background: black;
+  overflow: hidden;
+  height: 100vh;
+}
+canvas {
+  display: block;
+  background: black;
+}
+
+#imageContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6 cột cố định */
+  gap: 20px;
+  justify-items: center; /* căn giữa ảnh trong từng ô */
+  align-items: center;
+
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow-y: auto;
+  z-index: 9999;
+}
+
+#imageContainer img {
+  width: 120px;   /* đảm bảo kích thước đồng nhất */
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+
+
+.birthday-img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px white;
+  opacity: 0;
+}
+
+.m1 {
+  width: 170px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
