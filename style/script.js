@@ -33,9 +33,10 @@ const texts = [
   "2", 
   "1", 
   "Happy Birthday",
-  "Mít Mật 💕",
-  "Người anh thương",
-  "Anh nho em lam",
+  "Cô nhỏ 💕",
+  "Nguoi anh thuong",
+  "Nguyễn Ngọc Mai",
+  "Ảnh.em.anh.để.cop.xe.em",
 ];
 
 const BASE_DISPLAY_TIME = 2500;
